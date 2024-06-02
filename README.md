@@ -1,7 +1,11 @@
 # Awsome YouTube Project
 
+## Demo
 
-# Home Page
+
+<img src="./demo/HomePage.png" type="" />
+
+## Home Page
 
 - Header
     - Logo
@@ -19,7 +23,7 @@
                 * Channel Name 
                 * Deatil
 
-# Watch Page
+## Watch Page
 
 - Haeder
 - Main
