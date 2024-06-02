@@ -13,7 +13,7 @@ const usePopularVideo = () => {
       const data = await fetch(YOUTUBE_GETVIDEO);
       const results = await data.json();
 
-      console.log(results);
+      // console.log(results);
       dispatch(addPopulaVideo(results));
     }
   };

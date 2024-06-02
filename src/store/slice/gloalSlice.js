@@ -4,7 +4,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const globalSlice = createSlice({
     name: 'global',
     initialState: {
-        showSideBar: true
+        showSideBar: true,
+        searchCache: {}
     },
     reducers: {
         changeSideBar: (state) => {
@@ -12,10 +13,13 @@ const globalSlice = createSlice({
         },
         clodeSideBar: (state) => {
             state.showSideBar = false;
+        },  
+        addSearchCache: (state, action) => {
+            state.searchCache = Object.assign(state.searchCache, action.payload);
         }
     }
 });
 
-export const {changeSideBar, clodeSideBar} = globalSlice.actions;
+export const {changeSideBar, clodeSideBar, addSearchCache} = globalSlice.actions;
 
 export default globalSlice.reducer;

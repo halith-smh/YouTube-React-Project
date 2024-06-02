@@ -1,4 +1,4 @@
-# YouTube
+# Awsome YouTube Project
 
 
 # Home Page
@@ -18,3 +18,11 @@
                 * Title
                 * Channel Name 
                 * Deatil
+
+# Watch Page
+
+- Haeder
+- Main
+    - Iframe - VideoContainer
+    - Live Chat
+    - Nested Comment Section

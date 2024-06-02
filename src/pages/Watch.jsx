@@ -5,17 +5,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { clodeSideBar } from "../store/slice/gloalSlice";
 import { useSearchParams } from "react-router-dom";
 import WatchConatiner from "../components/WatchConatiner";
+import CommentSection from "../components/CommentSection";
 
 const Watch = () => {
   const dispatch = useDispatch();
-  const showSideBar = useSelector(store => store.global.showSideBar);
+  const showSideBar = useSelector((store) => store.global.showSideBar);
 
   const [videoIdParam] = useSearchParams();
-  // console.log(data.get('v'));
 
   useEffect(() => {
     dispatch(clodeSideBar());
-  },[])
+  }, []);
 
   return (
     <>
@@ -27,9 +27,12 @@ const Watch = () => {
           </div>
         )}
         <section className="col-span-10 p-4 mr-2 ml-8">
-          <WatchConatiner videoId={videoIdParam.get('v')} />
+          <WatchConatiner videoId={videoIdParam.get("v")} />
           {/* <CatgBtns /> */}
           {/* <VideoConatiner /> */}
+          <div className="w-[50%]">
+            <CommentSection />
+          </div>
         </section>
       </main>
     </>
