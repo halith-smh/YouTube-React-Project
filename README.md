@@ -3,7 +3,7 @@
 ## Demo
 
 
-<img src="./demo/HomePage.png" type="" />
+<img src="./demo/demo.gif" type="" />
 
 ## Home Page
 
