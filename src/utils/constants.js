@@ -11,6 +11,8 @@ export const YOUTUBE_VIDEO_BY_ID =
 export const YOUTUBE_SEARCH_API =
   "https://thingproxy.freeboard.io/fetch/https://suggestqueries-clients6.youtube.com/complete/search?output=firefox&hl=en-gb&gl=in&q=";
 
+export const YOUTUBE_SEARCH_LIST_API = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key="+API_KEY+"q=";
+
 export const COMMENT_DATA = [
   {
     id: 1,

@@ -11,10 +11,10 @@ const Home = () => {
     <>
       <Header />
       <main className="grid grid-flow-col">
-        {showSideBar && <div className="col-span-3">
+        {showSideBar && <div className="col-span-3 w-[200px]">
           <SideBar />
         </div>}
-        <section className="col-span-9 p-4 mr-2 ml-8">
+        <section className="col-span-9 py-4 mr-2 ml-8">
           <CatgBtns />
           <VideoConatiner />
         </section>

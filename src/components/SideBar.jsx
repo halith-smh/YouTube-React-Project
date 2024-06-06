@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
-    <div className="py-2 sticky pr-10 col-span-1  h-[90vh]  shadow-lg">
+    <div className="py-2 pr-2 col-span-1  h-[90vh]  shadow-lg">
       <div className="catg p-2">
         <ul className="mt-2">
           <Link to='/'> <li className="mb-1 text-sm cursor-pointer hover:bg-gray-200 rounded-lg p-2"><i className="bi bi-house-door pr-2 relative"></i>Home</li>  </Link>
